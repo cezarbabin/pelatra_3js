@@ -20,7 +20,7 @@ Scene = function(){
       alpha: true,
       antialias: false
   });
-  renderer.setPixelRatio( window.devicePixelRatio);
+  renderer.setPixelRatio( window.devicePixelRatio*2);
   renderer.setSize(WIDTH, HEIGHT);
   
   renderer.shadowMap.enabled = true;
@@ -32,13 +32,13 @@ Scene = function(){
   stats.domElement.style.position = 'absolute';
   stats.domElement.style.bottom = '0px';
   stats.domElement.style.zIndex = 100;
-  container.appendChild( stats.domElement );
+  //container.appendChild( stats.domElement );
   
   // memory stats
   stats2.domElement.style.position = 'fixed';
   stats2.domElement.style.right   = '0px';
   stats2.domElement.style.top       = '0px';
-  container.appendChild( stats2.domElement );
+  //container.appendChild( stats2.domElement );
   
   // Listen to the screen: if the user resizes it
   // we have to update the camera and the renderer size

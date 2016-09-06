@@ -4,6 +4,7 @@ SlidingObstacle = function(row, index, order){
   var material = new THREE.MeshPhongMaterial( {
     color: Colors.red,
     opacity:1,
+    wireframe:true,
     shading:THREE.FlatShading,
     } );
   var chargingObstacle = new THREE.Mesh( geometry, material );

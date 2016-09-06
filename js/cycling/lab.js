@@ -6,6 +6,7 @@ Labirinth = function(index){
   var pm = new THREE.MeshPhongMaterial({
                                        color:Colors.red,
                                        opacity:1,
+                                       wireframe:true,
                                        shading:THREE.FlatShading,
                                        });
 

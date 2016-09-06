@@ -44,7 +44,7 @@ function initializeSection(i, level, old) {
     } else if (old == "sliding") {
         fillSliding(i);
     } else {
-        var scenery = 'temple';
+        var scenery = 'labirinth';
         if (previousScenery != scenery){
             if (scenery == 'temple'){
                 camera.position.z = 60;
@@ -65,7 +65,7 @@ function initializeSection(i, level, old) {
         if (scenery == 'temple'){
             TRAILWIDTH = 230;
             new Temple(i);
-            fillFalling(i);
+            //fillFalling(i);
         }
         
         if (scenery == 'labirinth'){
@@ -75,7 +75,7 @@ function initializeSection(i, level, old) {
         
         if (scenery == 'mountains'){
             new Section(i);
-            fillSimple(i);
+            //fillSimple(i);
         }
         
         //new Labirinth(i);

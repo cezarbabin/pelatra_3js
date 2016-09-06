@@ -60,13 +60,13 @@ function createScene() {
     renderer.shadowMap.enabled = true;
     
     container = document.getElementById('world');
-    container.appendChild(renderer.domElement);
+    //container.appendChild(renderer.domElement);
     
     // framerate stat
     stats.domElement.style.position = 'absolute';
     stats.domElement.style.bottom = '0px';
     stats.domElement.style.zIndex = 100;
-    container.appendChild( stats.domElement );
+    //container.appendChild( stats.domElement );
     
    
     

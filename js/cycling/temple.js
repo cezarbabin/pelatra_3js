@@ -13,7 +13,7 @@ Temple = function(index) {
 	var columnMaterial = new THREE.MeshPhongMaterial({
 	  color:0xFFFFFF,
 	  transparent:true,
-	  opacity:1,
+	  wireframe:true,
 	  shading:THREE.FlatShading,
   });
 	var generalGeo = new THREE.Geometry();
@@ -68,6 +68,7 @@ Temple = function(index) {
   var pm = new THREE.MeshPhongMaterial({
 		color:0x004829,
 		opacity:0.8,
+		wireframe:true,
 		shading:THREE.FlatShading,
 	});
 
@@ -85,10 +86,11 @@ Temple = function(index) {
   }
 
 	//// TRAIL COLOR
-	var pg = new THREE.PlaneGeometry(TRAILWIDTH, SECTIONHEIGHT, 1, 1);
+	var pg = new THREE.PlaneGeometry(TRAILWIDTH, SECTIONHEIGHT, 100, 100);
   var pm = new THREE.MeshPhongMaterial({
                                        color:0x041506,
                                        opacity:0.3,
+                                       wireframe:true,
                                        shading:THREE.FlatShading,
                                        });
 
